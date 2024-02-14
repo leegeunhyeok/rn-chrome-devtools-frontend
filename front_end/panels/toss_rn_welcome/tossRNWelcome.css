@@ -1,0 +1,84 @@
+:root {
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.emoji {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.tag {
+  padding: .0 .25rem;
+  border-radius: .25rem;
+  color: var(--color-button-primary-text);
+  background-color: var(--color-primary-bright);
+}
+
+.toss-rn-welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  height: 100%;
+  padding: 16px;
+  background-color: var(--color-background-elevation-0);
+}
+
+.toss-rn-welcome > header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.toss-rn-welcome > header > img.toss-logo {
+  width: 180px;
+  height: 180px;
+}
+
+.toss-rn-welcome > header > h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--color-text-primary);
+}
+
+.toss-rn-welcome > header > p {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--color-text-secondary);
+}
+
+.toss-rn-welcome > main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.toss-rn-welcome > main > section.guide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+.toss-rn-welcome > main > section.guide > .item {
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+}
+
+.toss-rn-welcome > footer {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+}

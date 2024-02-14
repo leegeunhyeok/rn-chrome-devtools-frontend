@@ -9,11 +9,11 @@ import("../../../scripts/build/ninja/generate_css.gni")
 import("../visibility.gni")
 
 generate_css("css_files") {
-  sources = [ "rnWelcome.css" ]
+  sources = [ "tossRNWelcome.css" ]
 }
 
-devtools_module("rn_welcome") {
-  sources = [ "RNWelcome.ts" ]
+devtools_module("toss_rn_welcome") {
+  sources = [ "TossRNWelcome.ts" ]
 
   deps = [
     "../../core/host:bundle",
@@ -29,17 +29,17 @@ devtools_module("rn_welcome") {
 }
 
 devtools_entrypoint("bundle") {
-  entrypoint = "rn_welcome.ts"
+  entrypoint = "toss_rn_welcome.ts"
 
   deps = [
     ":css_files",
-    ":rn_welcome",
+    ":toss_rn_welcome",
   ]
 
   visibility = [
     ":*",
     "../../../test/unittests/front_end/entrypoints/missing_entrypoints/*",
-    # "../../../test/unittests/front_end/panels/rn_welcome/*",
+    # "../../../test/unittests/front_end/panels/toss_rn_welcome/*",
     "../../entrypoints/*",
   ]
 
@@ -47,7 +47,7 @@ devtools_entrypoint("bundle") {
 }
 
 devtools_entrypoint("meta") {
-  entrypoint = "rn_welcome-meta.ts"
+  entrypoint = "toss_rn_welcome-meta.ts"
 
   deps = [ ":bundle" ]
 

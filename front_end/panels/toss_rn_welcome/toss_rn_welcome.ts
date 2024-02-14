@@ -3,10 +3,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import './RNWelcome.js';
+import './TossRNWelcome.js';
 
-import * as RNWelcome from './RNWelcome.js';
+import * as TossRNWelcome from './TossRNWelcome.js';
 
 export {
-  RNWelcome,
+  TossRNWelcome,
 };

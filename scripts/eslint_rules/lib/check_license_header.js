@@ -68,7 +68,6 @@ const EXCLUDED_FILES = [
 
 const META_CODE_PATHS = [
   'entrypoints/rn_inspector',
-  'panels/rn_welcome',
 ];
 
 const OTHER_LICENSE_HEADERS = [
